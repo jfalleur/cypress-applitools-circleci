@@ -19,8 +19,6 @@ jobs:
       - run:
           name: Run Tests
           command: npx cypress run
-          environment: 
-            APPLITOOLS_API_KEY: f5xHwflROReVE05Lsp5k8ZwK1066x5B5NMcz3B4V9x107UM110
       
       - store_test_results:
           path: test-results
