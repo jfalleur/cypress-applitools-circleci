@@ -18,10 +18,8 @@ jobs:
           command:  cd cypress && npm install --save
       - run:
           name: Run Tests
-          command: cd cypress && npx cypress run
-          environment: 
-            APPLITOOLS_API_KEY: f5xHwflROReVE05Lsp5k8ZwK1066x5B5NMcz3B4V9x107UM110
-      
+          command: npx cypress run
+             
       - store_test_results:
           path: test-results
       - store_artifacts:
